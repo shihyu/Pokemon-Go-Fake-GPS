@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.lomesh.xyz.go.MainActivity"
+    android:background="#fff">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:id="@+id/linearL"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="79dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="GPS Joystick"
+            android:id="@+id/textView"
+            android:textColor="#5a5959"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/placeText"
+
+            android:hint="place"
+            android:layout_marginBottom="10dp"
+            android:textColor="#585656"
+            android:textColorHint="#b3b3b3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/searchButton"
+
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/latText"
+                android:hint="latitude"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#585656"
+                android:background="#f6f6f6"
+                android:inputType="numberSigned|numberDecimal"
+                android:singleLine="false"
+                android:textIsSelectable="false"
+                android:theme="@style/Widget.AppCompat.EditText"
+                android:editable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:textColorHint="#b3b3b3" />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/longText"
+                android:hint="longitude"
+                android:textColor="#585656"
+                android:background="#f6f6f6"
+                android:inputType="numberSigned|numberDecimal"
+                android:singleLine="false"
+                android:textIsSelectable="false"
+                android:theme="@style/Widget.AppCompat.EditText"
+                android:editable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:textColorHint="#b3b3b3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:id="@+id/speedGroup">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1x"
+                    android:id="@+id/slow"
+                    android:textColor="#000"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2x"
+                    android:id="@+id/fast"
+                    android:textColor="#000" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3x"
+                    android:id="@+id/fastest"
+                    android:textColor="#000" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Go!"
+            android:id="@+id/goButton"
+            android:padding="0dp"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
